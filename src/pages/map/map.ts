@@ -30,7 +30,7 @@ export class MapPage {
           let myPosition: LatLng = new LatLng(41.390295, 2.154007);
           this.map.animateCamera({target: myPosition,zoom: 10});
         })
-      })
+      }).catch(()=>alert("GoogleMap is not available"));
     })
   }
 
